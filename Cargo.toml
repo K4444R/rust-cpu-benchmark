@@ -1,0 +1,14 @@
+[package]
+name = "cpu-benchmark"
+version = "0.1.0"
+edition = "2021"
+description = "Tool for CPU benchmarking"
+categories = ["command-line-utilities"]
+
+[dependencies]
+sysinfo = "0.29.7"
+indicatif = "0.17.5"
+
+[profile.release]
+lto = "fat"
+strip = "debuginfo"
