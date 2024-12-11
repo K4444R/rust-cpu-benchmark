@@ -9,6 +9,8 @@ categories = ["command-line-utilities"]
 sysinfo = "0.29.7"
 indicatif = "0.17.5"
 
+
+
 [profile.release]
 lto = "fat"
 strip = "debuginfo"
